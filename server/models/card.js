@@ -49,7 +49,7 @@ const Card = sequelize.define('Card', {
     },
 
     race: {
-	TYPE: DataTypes.ENUM('Aqua', 'Beast', 'Beast-Warrior', 'Continius', 'Counter', 'Creator-God', 'Cyberse', 'Dinosaur', 'Divine-Beast', 'Dragon', 'Equip', 'Fairy', 'Field', 'Fiend', 'Fish', 'Illusion', 'Insect', 'Machine', 'Mormal', 'Plant', 'Psychic', 'Pyro', 'Quick-Play', 'Reptile', 'Ritual', 'Rock', 'Sea Serpent', 'Spellcaster', 'Thunder', 'Warrior', 'winged Beast', 'Wyrm', 'Zombie'),
+	type: DataTypes.ENUM('Aqua', 'Beast', 'Beast-Warrior', 'Continius', 'Counter', 'Creator-God', 'Cyberse', 'Dinosaur', 'Divine-Beast', 'Dragon', 'Equip', 'Fairy', 'Field', 'Fiend', 'Fish', 'Illusion', 'Insect', 'Machine', 'Mormal', 'Plant', 'Psychic', 'Pyro', 'Quick-Play', 'Reptile', 'Ritual', 'Rock', 'Sea Serpent', 'Spellcaster', 'Thunder', 'Warrior', 'winged Beast', 'Wyrm', 'Zombie'),
 
 	allowNull: false
     },
