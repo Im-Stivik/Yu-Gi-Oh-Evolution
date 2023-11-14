@@ -60,11 +60,6 @@ const Card = sequelize.define('Card', {
 
     level: {
 	type: DataTypes.NUMBER
-    },
-
-    rarity: {
-	type: DataTypes.ENUM('Common'),
-	allowNull: false
     }
 
 })
