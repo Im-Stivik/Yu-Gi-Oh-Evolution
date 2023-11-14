@@ -15,7 +15,7 @@ router.get("/getAllCards", (req, res) => {
 });
 
 router.post("/createCard", (req, res) =>{
-    const {name, flavor_text, cardType, serial, attack, defence, isTuner, monster_type, atribute, level} = req.body;
+    const {name, flavor_text, cardType, serial, attack, defence, isTuner, race, atribute, level} = req.body;
     Card.create({
 	name,
 	flavor_text,
@@ -24,7 +24,7 @@ router.post("/createCard", (req, res) =>{
 	attack,
 	defence,
 	isTuner,
-	monster_type,
+	race,
 	atribute,
 	level
     })

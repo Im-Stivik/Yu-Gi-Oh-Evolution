@@ -23,9 +23,9 @@ const Card = sequelize.define('Card', {
     },
 
     cardType: {
-	type: DataTypes.ENUM('vanilla', 'effect', 'fusion', 'ritual', 'syncro', 'xyz', 'pendilum', 'link', 'spell', 'trap'),
+	type: DataTypes.ENUM('Normal Monster', 'fusion', 'ritual', 'syncro', 'xyz', 'pendilum', 'link', 'spell', 'trap'),
 	allowNull: false,
-	defaultValue: 'vanilla'
+	defaultValue: 'Normal Monster'
     },
 
     serial: {
@@ -48,12 +48,14 @@ const Card = sequelize.define('Card', {
 	allowNull: false
     },
 
-    monster_type: {
-	type: DataTypes.ENUM('spellcaster', 'dragon')
+    race: {
+	TYPE: DataTypes.ENUM('Aqua', 'Beast', 'Beast-Warrior', 'Continius', 'Counter', 'Creator-God', 'Cyberse', 'Dinosaur', 'Divine-Beast', 'Dragon', 'Equip', 'Fairy', 'Field', 'Fiend', 'Fish', 'Illusion', 'Insect', 'Machine', 'Mormal', 'Plant', 'Psychic', 'Pyro', 'Quick-Play', 'Reptile', 'Ritual', 'Rock', 'Sea Serpent', 'Spellcaster', 'Thunder', 'Warrior', 'winged Beast', 'Wyrm', 'Zombie'),
+
+	allowNull: false
     },
 
     atribute: {
-	type: DataTypes.ENUM('dark', 'quickspell')
+	type: DataTypes.ENUM('dark', 'divine', 'earth', 'fire', 'light', 'water', 'wind')
     },
 
     level: {
